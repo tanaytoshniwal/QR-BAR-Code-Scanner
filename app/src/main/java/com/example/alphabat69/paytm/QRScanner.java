@@ -82,6 +82,7 @@ public class QRScanner extends AppCompatActivity {
                             text.setText(qrcodes.valueAt(0).displayValue);
                             obj=new ScannedCode(text.getText().toString());
                             startActivity(new Intent(QRScanner.this,MainActivity.class));
+                            finish();
                         }
                     });
                 }
